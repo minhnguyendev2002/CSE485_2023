@@ -9,8 +9,20 @@
 <body>
     Bài Tập Thực Hành 1 <br>
     
+    <form action="/action_page.php" style="margin: 50px 0px">
+        <label for="lname">STT:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <label for="fname">Full Name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <input type="submit" value="Submit">
+    </form>
+
     <?php
-        include 'models\student.php';
+        $file = fopen('public\List_of_student.txt', 'r');
+        while(!feof($file)) {
+            $line = fgets($file);
+            echo $line . "<br>";
+        }
     ?>
 </body>
 </html>

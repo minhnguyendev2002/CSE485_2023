@@ -1,6 +1,7 @@
 <?php
-  declare(strict_types = 1);
-  class Student
+  require('models\student.php');
+
+  class Students
   {
       public int    $msv;
       public string $fullname;
