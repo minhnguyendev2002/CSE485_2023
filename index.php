@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    Bài Tập Thực Hành 1
+    Bài Tập Thực Hành 1 <br>
+    
+    <?php
+        include 'models\student.php';
+    ?>
 </body>
 </html>
